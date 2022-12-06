@@ -107,15 +107,19 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && age < 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+# This line evaluated to false, because even though it is true that the dog loves to play,
+# it has an age value that is equal to 1 and the code checks to see that the age vaue is less than (not less than or equal to) 1.
+# Both conditions must be met for the statement to evaluate to true, and the second condition is not met.
